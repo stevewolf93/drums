@@ -1,1 +1,37 @@
 /* basic structure*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #131313;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.outerContainer {
+  border: 1px solid #EFEFEF;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.outerContainer > div {
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  color: #EFEFEF;
+  font-size: 18px;
+}
